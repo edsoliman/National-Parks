@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+
+      <div class="form_container">
+        <form>
+          <h1><legend>National Parks Finder</legend></h1>
+          <br>
+          <div>
+            <span>
+              <label for="state">State code:</label>
+              <input id="state" type="text"></input>
+            </span>
+          </div>
+          <div>
+            <span>
+              <label for="max_Results">Maximum results to return:</label>
+              <input id="max_Results" type="number" value="10"></input>
+            </span>
+          </div>
+          <br>
+          <button>Submit</button>
+        </form>
+      <div>
+
+      <div id="search_results_container" class="hidden">
+        <h2>Search Results</h2>
+        <ul id="search_results">
+        </ul>
+      </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
